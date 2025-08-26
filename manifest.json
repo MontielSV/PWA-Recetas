@@ -1,0 +1,16 @@
+{
+  "name": "Simulador de Presupuesto Mensual",
+  "short_name": "Presupuesto",
+  "description": "App PWA para gestionar ingresos, gastos y metas de ahorro mensuales.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#121935",
+  "icons": [
+    {
+      "src": "https://cdn.pixabay.com/photo/2021/01/25/12/21/money-5948190_1280.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
