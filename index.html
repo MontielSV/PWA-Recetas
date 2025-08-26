@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121935">
   <title>Simulador de Presupuesto Mensual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* ====== Estilos básicos y tema ====== */
     :root{
@@ -541,5 +544,12 @@
     // =====================
     loadOrInit(new Date().toISOString().slice(0,7));
   </script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("✅ Service Worker registrado"))
+      .catch((err) => console.error("❌ Error en el Service Worker:", err));
+  }
+</script>
 </body>
 </html>
